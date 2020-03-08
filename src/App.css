@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*{
+    font-family: 'Flamenco', cursive;
+}
+body {
+    background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+div.addInput input{
+    min-width: 100%;
+    min-height: 2rem;
+    font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+div.selectInput select {
+    min-width: 100%;
+    min-height: 3.2rem;
+    padding-left: 20%;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+div.addButton Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.2rem ;
+    padding: 0 1rem;
+    min-width: 100%;
+    background-color: rebeccapurple;
+}
+div.addForm {
+    margin: 1rem auto;
+}
+div.control {
+    margin: 0.5rem auto;
+}
+
+div.playlistItem Button {
+    margin-left: 50%;
+}
+div.playlistItem {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.list-group-item {
+    border: 1px solid black !important;
+}
+.navbar{
+    background-image: radial-gradient( circle 732px at 96.2% 89.9%,  rgba(70,66,159,1) 0%, rgba(187,43,107,1) 92% ); 
+}
+.logo{
+    display: flex;
+}
+.logoText{
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 2rem;
+    
+}
+
+.loginContainer{
+    margin-top: 1rem;
+    background-color:rgba(43, 52, 128, 0.568);
+    padding: 1rem;
+    padding-left: 1rem !important;
+    max-width: max-content !important;
+}
+.loginForm{
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.loginForm Button {
+    border: 1px solid black;
+}
+
+.loginForm input {
+    font-size: 1.5rem;
+}
+
+.badge{
+    background-image: radial-gradient( circle 732px at 96.2% 89.9%,  rgba(70,66,159,1) 0%, rgba(187,43,107,1) 92% );
+    font-size: 1.2rem !important;
+    border-top-left-radius: 0% !important;
+    min-width: 100%;
+    padding: 0.1rem !important;
+    margin-top: 1rem;
+    border-radius: 0% !important;
+    border-bottom: 0.2rem solid black;
+    
+}
+.badge span {
+    color: #ffffffd8;
+}
+
+.homeTitle {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.playlist-app {
+    background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding-bottom: 2rem; 
+}
+.control-buttons Button {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.notYet {
+    font-size: 3rem;
+}
+input, select{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
